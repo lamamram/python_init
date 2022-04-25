@@ -73,3 +73,26 @@ print(bin(~n2))
 # décalage à gauche et à droite => multiplacation ou division par deux
 print(bin(n1 << 1), bin(n2 >> 2))
 # %%
+# ordre d'exécution des opérateurs
+x, y, z = 2, 3, 4
+
+# pass: instruction neutre => ne fait rien
+# Rappel: () > op arithmétique > logique > comparaison
+if (x * y + z > 5 or x * (y + z) < 20) and True:
+    pass
+# %%
+# opérateur d'incrémentation
+x = 2
+
+# fonctionne avec + -, *, /, **
+# équivalent à x = x ** 2
+x **= 2
+print(x)
+
+# pour str
+_str = ""
+_str += "chunk1|"
+_str += "chunk2|"
+_str += "chunk3"
+print(_str)
+# %%
