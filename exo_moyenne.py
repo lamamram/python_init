@@ -3,8 +3,29 @@
 
 # 1. saisir une série de nombres entiers séparés par "," (en une seule saisie)
 
+nbs = input("saisir des nombres entiers séparés par ,: ")
+print(nbs)
 # 2. pour chaque nombre, vérifier qu'il s'agit d'un entier
 #    regarder la fonction isnumeric du type str
 #    séparer le cas >= 0 et < 0
+true_nbs = []
+nbs = nbs.split(",")
+for nb in nbs:
+    # on traite le cas ""
+    if nb and (
+        # si entier >= 0
+        nb.isnumeric() 
+        # ... ou entier < 0
+        or nb[0] == "-" and nb[1:].isnumeric()):
+        true_nbs.append(int(nb))
+    else:
+        print(nb, "n'est pas un entier !")
 
 # 3. si tous les nombres sont des entiers, calculer et afficher la moyenne
+if len(nbs) == len(true_nbs):
+    print(round(sum(true_nbs)/len(true_nbs), 2))
+# %%
+"-1".isnumeric()
+# %%
+
+# %%
