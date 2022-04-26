@@ -111,3 +111,44 @@ import numpy as np
 stuff = np.array([1, 2, 3, 4])
 print(stuff.mean())
 # %%
+
+# écrire une longue chaine sur plusieurs ligne
+longue_chaine = "blabla blabla blabla blabla \
+blabla blabla blabla blabla blabla blabla"
+print(longue_chaine)
+
+# inclure le saut de ligne dans une chaine
+paragraphe = """
+blabla blabla blabla blabla blablablabla blabla
+blabla blabla blabla blabla blablablabla blabla
+blabla blabla blabla blabla blablablabla blabla
+blabla blabla blabla blabla blablablabla blabla
+"""
+print(paragraphe)
+# %%
+
+# fonctions d'ajout supression de listes
+l = []
+
+# ajout par la droite
+# append ne ernvoie rien, mais modifie l'objet de l'intérieur
+print(l.append("un"))
+print(l.append("deux"))
+print(l.append("deux"))
+print(l.append("trois"))
+
+# ajout à gauche de l'indice i
+l.insert(0, "zéro")
+
+print(l)
+
+# supprime par la droite et retourne l'élément
+print(l.pop(), l)
+
+# supprime à l'indice i
+print(l.pop(0), l)
+
+# supprimer la première occurence d'unvaleur
+l.remove("deux")
+print(l)
+# %%

@@ -23,7 +23,17 @@ for nb in nbs:
 
 # 3. si tous les nombres sont des entiers, calculer et afficher la moyenne
 if len(nbs) == len(true_nbs):
-    print(round(sum(true_nbs)/len(true_nbs), 2))
+    moyenne = round(sum(true_nbs)/len(true_nbs), 2)
+    # styles d'affichage
+    print("moyenne: " + str(moyenne))
+    print("moyenne: ", moyenne)
+    # templating
+    print("moyenne: %f" % moyenne)
+    print("moyenne: %.2f" % moyenne)
+    print("{1}: {0:5.2f}".format(moyenne, "moy"))
+    # f-string
+    label = "moyenne"
+    print(f"{label.upper()}: {moyenne:5.2f}")
 # %%
 "-1".isnumeric()
 # %%
