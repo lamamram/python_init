@@ -39,3 +39,19 @@ if len(nbs) == len(true_nbs):
 # %%
 
 # %%
+nbs = input("saisir des nombres entiers séparés par ,: ")
+nbs = nbs.split(",")
+for i, nb in enumerate(nbs):
+    if nb and (
+        # si entier >= 0
+        nb.isnumeric() 
+        # ... ou entier < 0
+        or nb[0] == "-" and nb[1:].isnumeric()):
+        nbs[i] = int(nb)
+    else:
+        print(f"{nb} n'est pas un entier !")
+        break
+else:
+    moyenne = round(sum(nbs)/len(nbs), 2)
+    print(f"moyenne : {moyenne:.2f}")
+# %%
