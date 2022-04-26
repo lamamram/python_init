@@ -44,3 +44,34 @@ _template = re.sub("\(\(.*\)\)", "N/A", _template)
 print(_template)
 
 # %%
+
+def parse_tpl(tpl, vars, *, slot=("{{", "}}"), default="N/A"):
+    while tpl.count(slot[0]):
+        start_index = tpl.index(slot[0]) + len(slot[0])
+        end_index = tpl.index(slot[1])
+        key = tpl[start_index:end_index]
+        tpl = tpl.replace(
+            slot[0] + key + slot[1], 
+            vars.get(key, default)
+        )
+    return tpl
+
+print(parse_tpl(_template, injections, slot=("((", "))")))
+print(parse_tpl(
+    """blabla {{name}}  {{firstname}}""",
+    {"name": "LAMAMRA", "firstname": "matt"}
+))
+# %%
+def parse_tpl(tpl, slot=("{{", "}}"), default="N/A", **vars):
+    while tpl.count(slot[0]):
+        start_index = tpl.index(slot[0]) + len(slot[0])
+        end_index = tpl.index(slot[1])
+        key = tpl[start_index:end_index]
+        tpl = tpl.replace(
+            slot[0] + key + slot[1], 
+            vars.get(key, default)
+        )
+    return tpl
+
+print(parse_tpl(_template, slot=("((", "))"), key1="val1", key2="val2"))
+# %%
