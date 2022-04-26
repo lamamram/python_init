@@ -44,8 +44,15 @@ _template = re.sub("\(\(.*\)\)", "N/A", _template)
 print(_template)
 
 # %%
-
-def parse_tpl(tpl, vars, *, slot=("{{", "}}"), default="N/A"):
+# 1 choisir un nom cohérent
+# 2. réfléchir aux paramètres permettant une généralisation maximale
+# 3. réfléchir aux valeurs par défaut
+# 4. refactoriser (ctrl+f)
+# 5. gérer la valeur de retour 
+def parse_tpl(tpl: str, vars: dict, *, slot: tuple=("{{", "}}"), default: str="N/A") -> str:
+    """
+    moteur de templating    
+    """
     while tpl.count(slot[0]):
         start_index = tpl.index(slot[0]) + len(slot[0])
         end_index = tpl.index(slot[1])
@@ -61,7 +68,15 @@ print(parse_tpl(
     """blabla {{name}}  {{firstname}}""",
     {"name": "LAMAMRA", "firstname": "matt"}
 ))
+# doc
+# parse_tpl()
 # %%
+# 1 choisir un nom cohérent
+# 2. réfléchir aux paramètres permettant une généralisation maximale
+# 3. réfléchir aux valeurs par défaut
+# 4. refactoriser (ctrl+f)
+# 5. gérer la valeur de retour 
+
 def parse_tpl(tpl, slot=("{{", "}}"), default="N/A", **vars):
     while tpl.count(slot[0]):
         start_index = tpl.index(slot[0]) + len(slot[0])
