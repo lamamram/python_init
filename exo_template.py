@@ -20,3 +20,27 @@ injections = {
     "key2": "content2",
     "key3": "content3"
 }
+
+# %%
+while _template.count("(("):
+    start_index = _template.index("((") + len("((")
+    end_index = _template.index("))")
+    key = _template[start_index:end_index]
+    _template = _template.replace(
+        "((" + key + "))", 
+        injections.get(key, "N/A")
+    )
+
+print(_template)
+# %%
+"blabla".replace("bli", "blo")
+# %%
+import re
+
+for key, content in injections.items():
+    _template = _template.replace("((" + key + "))", content)
+
+_template = re.sub("\(\(.*\)\)", "N/A", _template)
+print(_template)
+
+# %%
