@@ -19,3 +19,17 @@
 # ex.
 # print(ord("a") - 97, ord("z") -97)
 # print(chr(97), chr(122))
+
+from crypto.caesar import *
+
+if __name__ == "__main__":
+    # for _ in range(100):
+    key = generate_key()
+    # print(key)
+    msg = "alattaque"
+    crypted = crypt(msg, key)
+    clean_msg = uncrypt(crypted, key)
+    print(clean_msg)
+# %%
+
+# %%
