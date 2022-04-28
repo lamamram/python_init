@@ -1,0 +1,608 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData>
+<Version>18.0.1f4</Version>
+<U16>
+<Name>XML Revision</Name>
+<Val>7</Val>
+</U16>
+<EW>
+<Name>Prog Type</Name>
+<Choice>Standard</Choice>
+<Choice>Smart</Choice>
+<Choice>Robotics</Choice>
+<Val>0</Val>
+</EW>
+<Cluster>
+<Name>PH0</Name>
+<NumElts>23</NumElts>
+<DBL>
+<Name>Stroke (mm)</Name>
+<Val>5.50000000000000</Val>
+</DBL>
+<I32>
+<Name>Speed (rpm)</Name>
+<Val>6000</Val>
+</I32>
+<DBL>
+<Name>Feed (mm/s)</Name>
+<Val>13.68425854125804</Val>
+</DBL>
+<DBL>
+<Name>Feed (mm/rev)</Name>
+<Val>0.13684258541258</Val>
+</DBL>
+<DBL>
+<Name>Thrust Max (A)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Torque Max (A)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Thrust Min (A)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Torque Min (A)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Thrust Safety (A)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Torque Safety (A)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>GAP (mm)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Peck (nb)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Delay (ms)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Stroke Limit</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Thrust Limit</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Torque Limit</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<EW>
+<Name>Lub Air</Name>
+<Choice>Off</Choice>
+<Choice>1</Choice>
+<Choice>2</Choice>
+<Choice>3</Choice>
+<Choice>4</Choice>
+<Choice>5</Choice>
+<Choice>6</Choice>
+<Choice>7</Choice>
+<Choice>8</Choice>
+<Choice>9</Choice>
+<Choice>10</Choice>
+<Choice>11</Choice>
+<Choice>12</Choice>
+<Choice>13</Choice>
+<Choice>14</Choice>
+<Choice>15</Choice>
+<Choice>16</Choice>
+<Choice>17</Choice>
+<Choice>18</Choice>
+<Choice>19</Choice>
+<Choice> Maxi</Choice>
+<Val>20</Val>
+</EW>
+<DBL>
+<Name>Lub Flow</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<EW>
+<Name>Vaccum</Name>
+<Choice>Off</Choice>
+<Choice>On</Choice>
+<Choice>33</Choice>
+<Choice>34</Choice>
+<Choice>35</Choice>
+<Choice>36</Choice>
+<Choice>37</Choice>
+<Choice>38</Choice>
+<Choice>39</Choice>
+<Choice>43</Choice>
+<Choice>44</Choice>
+<Choice>45</Choice>
+<Choice>46</Choice>
+<Choice>47</Choice>
+<Choice>48</Choice>
+<Choice>49</Choice>
+<Choice>53</Choice>
+<Choice>54</Choice>
+<Choice>55</Choice>
+<Choice>56</Choice>
+<Choice>57</Choice>
+<Choice>58</Choice>
+<Choice>59</Choice>
+<Choice>63</Choice>
+<Choice>64</Choice>
+<Choice>65</Choice>
+<Choice>66</Choice>
+<Choice>67</Choice>
+<Choice>68</Choice>
+<Choice>69</Choice>
+<Choice>73</Choice>
+<Choice>74</Choice>
+<Choice>75</Choice>
+<Choice>76</Choice>
+<Choice>77</Choice>
+<Choice>78</Choice>
+<Choice>79</Choice>
+<Choice>83</Choice>
+<Choice>84</Choice>
+<Choice>85</Choice>
+<Choice>86</Choice>
+<Choice>87</Choice>
+<Choice>88</Choice>
+<Choice>89</Choice>
+<Choice>93</Choice>
+<Choice>94</Choice>
+<Choice>95</Choice>
+<Choice>96</Choice>
+<Choice>97</Choice>
+<Choice>98</Choice>
+<Choice>99</Choice>
+<Val>0</Val>
+</EW>
+<U8>
+<Name>Vibratory Frequency</Name>
+<Val>0</Val>
+</U8>
+<DBL>
+<Name>Vibratory Amplitude</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<EB>
+<Name>Mat</Name>
+<Choice>N/A</Choice>
+<Choice>M1</Choice>
+<Choice>M2</Choice>
+<Choice>M3</Choice>
+<Choice>M4</Choice>
+<Choice>M5</Choice>
+<Val>0</Val>
+</EB>
+<Boolean>
+<Name>Active (OFF/ON)</Name>
+<Val>0</Val>
+</Boolean>
+</Cluster>
+<Array>
+<Name>Steps Sequence</Name>
+<Dimsize>1</Dimsize>
+<Cluster>
+<Name>PHn</Name>
+<NumElts>23</NumElts>
+<DBL>
+<Name>Stroke (mm)</Name>
+<Val>25.00000000000000</Val>
+</DBL>
+<I32>
+<Name>Speed (rpm)</Name>
+<Val>5500</Val>
+</I32>
+<DBL>
+<Name>Feed (mm/s)</Name>
+<Val>6.41666666666667</Val>
+</DBL>
+<DBL>
+<Name>Feed (mm/rev)</Name>
+<Val>7.00000000000000E-2</Val>
+</DBL>
+<DBL>
+<Name>Thrust Max (A)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Torque Max (A)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Thrust Min (A)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Torque Min (A)</Name>
+<Val>0.20000000000000</Val>
+</DBL>
+<DBL>
+<Name>Thrust Safety (A)</Name>
+<Val>2.20000000000000</Val>
+</DBL>
+<DBL>
+<Name>Torque Safety (A)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>GAP (mm)</Name>
+<Val>2.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Peck (nb)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Delay (ms)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Stroke Limit</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Thrust Limit</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Torque Limit</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<EW>
+<Name>Lub Air</Name>
+<Choice>Off</Choice>
+<Choice>1</Choice>
+<Choice>2</Choice>
+<Choice>3</Choice>
+<Choice>4</Choice>
+<Choice>5</Choice>
+<Choice>6</Choice>
+<Choice>7</Choice>
+<Choice>8</Choice>
+<Choice>9</Choice>
+<Choice>10</Choice>
+<Choice>11</Choice>
+<Choice>12</Choice>
+<Choice>13</Choice>
+<Choice>14</Choice>
+<Choice>15</Choice>
+<Choice>16</Choice>
+<Choice>17</Choice>
+<Choice>18</Choice>
+<Choice>19</Choice>
+<Choice> Maxi</Choice>
+<Val>20</Val>
+</EW>
+<DBL>
+<Name>Lub Flow</Name>
+<Val>2.00000000000000</Val>
+</DBL>
+<EW>
+<Name>Vaccum</Name>
+<Choice>Off</Choice>
+<Choice>On</Choice>
+<Choice>33</Choice>
+<Choice>34</Choice>
+<Choice>35</Choice>
+<Choice>36</Choice>
+<Choice>37</Choice>
+<Choice>38</Choice>
+<Choice>39</Choice>
+<Choice>43</Choice>
+<Choice>44</Choice>
+<Choice>45</Choice>
+<Choice>46</Choice>
+<Choice>47</Choice>
+<Choice>48</Choice>
+<Choice>49</Choice>
+<Choice>53</Choice>
+<Choice>54</Choice>
+<Choice>55</Choice>
+<Choice>56</Choice>
+<Choice>57</Choice>
+<Choice>58</Choice>
+<Choice>59</Choice>
+<Choice>63</Choice>
+<Choice>64</Choice>
+<Choice>65</Choice>
+<Choice>66</Choice>
+<Choice>67</Choice>
+<Choice>68</Choice>
+<Choice>69</Choice>
+<Choice>73</Choice>
+<Choice>74</Choice>
+<Choice>75</Choice>
+<Choice>76</Choice>
+<Choice>77</Choice>
+<Choice>78</Choice>
+<Choice>79</Choice>
+<Choice>83</Choice>
+<Choice>84</Choice>
+<Choice>85</Choice>
+<Choice>86</Choice>
+<Choice>87</Choice>
+<Choice>88</Choice>
+<Choice>89</Choice>
+<Choice>93</Choice>
+<Choice>94</Choice>
+<Choice>95</Choice>
+<Choice>96</Choice>
+<Choice>97</Choice>
+<Choice>98</Choice>
+<Choice>99</Choice>
+<Val>0</Val>
+</EW>
+<U8>
+<Name>Vibratory Frequency</Name>
+<Val>0</Val>
+</U8>
+<DBL>
+<Name>Vibratory Amplitude</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<EB>
+<Name>Mat</Name>
+<Choice>N/A</Choice>
+<Choice>M1</Choice>
+<Choice>M2</Choice>
+<Choice>M3</Choice>
+<Choice>M4</Choice>
+<Choice>M5</Choice>
+<Val>0</Val>
+</EB>
+<Boolean>
+<Name>Active (OFF/ON)</Name>
+<Val>1</Val>
+</Boolean>
+</Cluster>
+</Array>
+<Cluster>
+<Name>Cutting tool breakage detection</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>On /Off</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>DEP mm</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Thrust </Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Torque</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>CPU Counter Max Cycles </Name>
+<NumElts>2</NumElts>
+<Cluster>
+<Name>Cutting Tool 1</Name>
+<NumElts>2</NumElts>
+<U16>
+<Name>Limit</Name>
+<Val>65535</Val>
+</U16>
+<Boolean>
+<Name>Override</Name>
+<Val>0</Val>
+</Boolean>
+</Cluster>
+<Cluster>
+<Name>Cutting Tool 2</Name>
+<NumElts>2</NumElts>
+<U16>
+<Name>Limit</Name>
+<Val>0</Val>
+</U16>
+<Boolean>
+<Name>Override</Name>
+<Val>0</Val>
+</Boolean>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>Others Parameters</Name>
+<NumElts>4</NumElts>
+<U8>
+<Name>Equip. Pressure</Name>
+<Val>9</Val>
+</U8>
+<U16>
+<Name>Vacuum Delay</Name>
+<Val>0</Val>
+</U16>
+<DBL>
+<Name>Max Stroke</Name>
+<Val>30.00000000000000</Val>
+</DBL>
+<U32>
+<Name>Retract Rotation Speed (rpm)</Name>
+<Val>6000</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>Lub Reload and Preload</Name>
+<NumElts>4</NumElts>
+<U32>
+<Name>Preload Time (s)</Name>
+<Val>0</Val>
+</U32>
+<EW>
+<Name>Lub Air</Name>
+<Choice>Off</Choice>
+<Choice>1</Choice>
+<Choice>2</Choice>
+<Choice>3</Choice>
+<Choice>4</Choice>
+<Choice>5</Choice>
+<Choice>6</Choice>
+<Choice>7</Choice>
+<Choice>8</Choice>
+<Choice>9</Choice>
+<Choice>10</Choice>
+<Choice>11</Choice>
+<Choice>12</Choice>
+<Choice>13</Choice>
+<Choice>14</Choice>
+<Choice>15</Choice>
+<Choice>16</Choice>
+<Choice>17</Choice>
+<Choice>18</Choice>
+<Choice>19</Choice>
+<Choice> Maxi</Choice>
+<Val>0</Val>
+</EW>
+<DBL>
+<Name>Lub Flow</Name>
+<Val>30.00000000000000</Val>
+</DBL>
+<U32>
+<Name>Preload Timeout (s)</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Array>
+<Name>Quality Parameters</Name>
+<Dimsize>0</Dimsize>
+<Cluster>
+<Name>Quality Control Step</Name>
+<NumElts>16</NumElts>
+<Boolean>
+<Name>Activation</Name>
+<Val></Val>
+</Boolean>
+<DBL>
+<Name>Stop Code</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Distance min (mm)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Distance max (mm)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Time min (s)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Time max (s)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Torque Threshold (A)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Torque Average lower limit (A)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Torque Average upper limit (A)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Torque Deviation (A)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Torque Max (A)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Thrust Threshold (A)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Thrust Average lower limit (A)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Thrust Average upper limit (A)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Thrust Deviation (A)</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Thrust Max (A)</Name>
+<Val></Val>
+</DBL>
+</Cluster>
+</Array>
+<Cluster>
+<Name>Material Thickness parameters</Name>
+<NumElts>2</NumElts>
+<Boolean>
+<Name>Operator display message</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>Distance Offset</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Materials Coefficients</Name>
+<NumElts>6</NumElts>
+<DBL>
+<Name>M1 Coef.</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>M2 Coef.</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>M3 Coef.</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>M4 Coef.</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>M5 Coef.</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Max Distance</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Quality Control</Name>
+<NumElts>3</NumElts>
+<Boolean>
+<Name>Operator display message</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Operator Acknowledge</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Disable tool on issue</Name>
+<Val>0</Val>
+</Boolean>
+</Cluster>
+<String>
+<Name>Comment</Name>
+<Val>                                                                                                    </Val>
+</String>
+</LVData>
