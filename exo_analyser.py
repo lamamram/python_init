@@ -22,10 +22,13 @@
 # 4 méthodes privées et retourne le texte nettoyé en minuscules
 
 # 4. écrire une classe Counter dans le module counter
-# - le module counter import la classe Cleaner du module Counter
+# - le module counter import la classe Cleaner du module cleaner
 
 # 4.1 Counter prend en paramètre: __init__ 
-# - le texte
+
+# - un objet de classe cleaner
+
+# ou
 # - la chaine de ponctuation et le minimum signifiant
 # - l'attribut text du Counter doit être nettoyé dès l'initialisation
 
@@ -34,6 +37,8 @@
 # - renvoie un dictionnaire des mots du texte en clé avec leur occurence dans le texte
 # - en valeur, triés par ordre décroissants
 from text_analyser.cleaner import Cleaner
+from text_analyser.counter import Counter
+
 
 text = """
 Python (prononcé /pi.tɔ̃/) est un langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl.
@@ -44,8 +49,9 @@ Il est également apprécié par certains pédagogues qui y trouvent un langage 
 """
 
 if __name__ == "__main__":
-    cl = Cleaner(text)
-    print(cl.clean())
+    cnt = Counter(Cleaner(text))
+    print(cnt.get_occurences(min_occurence=3))
+
 # %%
 
 # %%
