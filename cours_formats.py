@@ -126,6 +126,7 @@ for k, v in cluster.items():
             for key, value in obj.items():
                 if key != "type":
                     t = ET.Element(key)
+                    # les scalaires convertis en str
                     t.text = str(value)
                     type_tag.append(t)
             cluster_tag.append(type_tag)
