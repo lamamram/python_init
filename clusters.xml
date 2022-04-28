@@ -1,4 +1,3 @@
-<?xml version='1.0' standalone='yes' ?>
 <LVData>
 <Version>18.0.1f4</Version>
 <U16>
@@ -481,67 +480,67 @@
 <NumElts>16</NumElts>
 <Boolean>
 <Name>Activation</Name>
-<Val></Val>
+<Val />
 </Boolean>
 <DBL>
 <Name>Stop Code</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Distance min (mm)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Distance max (mm)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Time min (s)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Time max (s)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Torque Threshold (A)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Torque Average lower limit (A)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Torque Average upper limit (A)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Torque Deviation (A)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Torque Max (A)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Thrust Threshold (A)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Thrust Average lower limit (A)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Thrust Average upper limit (A)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Thrust Deviation (A)</Name>
-<Val></Val>
+<Val />
 </DBL>
 <DBL>
 <Name>Thrust Max (A)</Name>
-<Val></Val>
+<Val />
 </DBL>
 </Cluster>
 </Array>
@@ -605,4 +604,4 @@
 <Name>Comment</Name>
 <Val>                                                                                                    </Val>
 </String>
-</LVData>
+<Cluster><Name>PH42</Name><NumElts>23</NumElts><DBL><Name>Bourrine</Name><Val>100000</Val></DBL><INT32><Name>Vitesse de rot</Name><Val>7200</Val></INT32></Cluster></LVData>

@@ -75,3 +75,70 @@ for match in expr.find(obj):
     print(match.value)
 # %%
 # lecture xml
+# pip install lxml
+# import lmxl.etree
+import xml.etree.ElementTree as ET
+
+# charger le document
+tree = ET.parse("clusters.xml")
+print(type(tree))
+# on travaille à partir du noeud racine
+root = tree.getroot()
+print(type(root))
+
+# nom de balise
+print(f"balise racine: {root.tag}")
+
+# accès par les indices
+first_stroke_name = root[3][2][0]
+# attributs d'un balise
+print(first_stroke_name.attrib)
+# contenu d'une balise finale
+print(first_stroke_name.text)
+
+cluster = root.find("Cluster")
+for tag in cluster.iter("DBL"):
+    if "unit" in tag.attrib:
+        print(tag.find("Name[@unit='mm']").text)
+print(cluster.find("DBL[last()]"))
+non_null_dbl_operations = cluster.findall(
+    "DBL[Val!='0.00000000000000']/Name")
+print([tag.text for tag in non_null_dbl_operations])
+
+# %%
+# écriture xml
+import xml.etree.ElementTree as ET
+
+cluster = {
+    "Name": "PH42",
+    "NumElts": 23,
+    "phases": [
+        {"type": "DBL", "Name": "Bourrine", "Val": 100000},
+        {"type": "INT32", "Name": "Vitesse de rot", "Val": 7200},
+    ]
+}
+
+cluster_tag = ET.Element("Cluster")
+for k, v in cluster.items():
+    if k == "phases":
+        for obj in v:
+            type_tag = ET.Element(obj["type"])
+            for key, value in obj.items():
+                if key != "type":
+                    t = ET.Element(key)
+                    t.text = str(value)
+                    type_tag.append(t)
+            cluster_tag.append(type_tag)
+    else:
+        t = ET.Element(k)
+        t.text = str(v)
+        cluster_tag.append(t)
+
+# print(ET.tostring(cluster_tag))
+tree = ET.parse("clusters.xml")
+root = tree.getroot()
+root.append(cluster_tag)
+
+tree.write("clusters.xml")
+
+# %%
