@@ -131,9 +131,11 @@ def _avg(l: list):
     if not l: raise ValueError(f"liste vide !")
     return round(sum(l)/len(l), 2)
 
+# _avg = check_range(0, 20)(_avg)
+
 try:
 #    print(notes_avg([]))
-    print(notes_avg([3, -6, 12]))
+    print(_avg([3, -6, 12]))
 except (ValueError, RangeError) as vre:
     print(vre)
 # %%
