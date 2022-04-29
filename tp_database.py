@@ -13,6 +13,7 @@ dns_df = pd.read_csv(
 
 
 # %%
+# filtre sur DataFrame
 # sub_set = dns_df.loc[ dns_df["Pays BE"] == "DE", ["Nom de domaine", "Pays BE"]]
 sub_set = dns_df[["Nom de domaine", "Pays BE"]]
 # %%
@@ -80,7 +81,7 @@ if __name__ == "__main__":
         cur.execute("select count(1) from pays")
         print(cur.fetchone()[0])
     
-    # slicing sur les lignes du df  + conversions
+    # slicing sur les lignes du df  + conversion
     # des données en liste de listes
     # batch = sub_set.loc[:1000].values.tolist()
     batch = sub_set.values.tolist()
