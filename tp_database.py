@@ -77,7 +77,7 @@ if __name__ == "__main__":
     
     # vérification du nombre de lignes insérées dans la table pays
     with db:
-        cur = conn.cursor()
+        cur = db.cursor()
         cur.execute("select count(1) from pays")
         print(cur.fetchone()[0])
     
